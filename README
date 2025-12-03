@@ -1,0 +1,324 @@
+# Maneja Ya – Landing Page Portal Conductor
+
+Este README describe cómo debe construirse la landing page de **Maneja Ya** para conductores que arriendan con opción de compra.
+
+> ⚠️ Regla clave:  
+> **No puedes cambiar el wording de los textos entregados.**  
+> No los resumas, no los reescribas, no los corrijas. Debes usarlos tal como están.
+
+---
+
+## 1. Objetivo
+
+Crear una landing page moderna, responsive y ligera para presentar:
+
+- Propuesta de valor de Maneja Ya.
+- Beneficios incluidos.
+- Modelos de autos disponibles (con tabs clickeables).
+- Requisitos para postular.
+- Proceso por etapas.
+- Manifiesto / texto de confianza.
+
+La página debe funcionar bien en **desktop** y **mobile**.
+
+---
+
+## 2. Tecnologías permitidas
+
+Usar solo:
+
+- **HTML5** (estructura semántica).
+- **CSS3** (sin frameworks tipo Bootstrap/Tailwind).
+- **JavaScript vanilla** (para tabs y menú mobile).
+
+Opcional:
+
+- Google Fonts (tipografía).
+- Font Awesome (íconos).
+
+No usar frameworks SPA (React, Vue, etc.).
+
+---
+
+## 3. Estructura de archivos
+
+Debes entregar **tres archivos**:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+
+`index.html` referencia a `styles.css` y `script.js`.
+
+---
+
+## 4. Contenido obligatorio (texto exacto)
+
+### 4.1. Menú (MENU)
+
+Fila superior:
+
+- Izquierda:  
+  `Logo Maneja Ya`
+- Derecha (enlace):  
+  `Portal Conductor`
+
+> Deja comentario en el código para reemplazar luego los links reales:
+> `<!-- Reemplazar con link real al Portal Conductor -->`.
+
+---
+
+### 4.2. First fold o Header
+
+Debe contener estos tres textos, en este orden:
+
+1. `¿Trabajas como conductor de Uber o apps similares?`
+2. `Arrienda con Opción de Compra. En 3 años el auto es tuyo.`
+3. `Déjanos tus datos y dentro de 30 minutos te contactaremos para decirte cómo avanzamos.`
+
+Puedes añadir botones de **Call to Action** (por ejemplo “Postular ahora”), pero sin modificar estos textos.
+
+---
+
+### 4.3. Segunda sección – “¿Qué incluye?”
+
+Título:
+
+- `¿Qué incluye?`
+
+Lista, con estos ítems exactos:
+
+- `Permisos e inscripción`
+- `Mantenciones básicas`
+- `Seguro para transporte de pasajeros`
+- `GPS con inmovilizador`
+- `Láminas de seguridad y sistemas de seguridad para prevención de robos.`
+
+No agregar ni modificar texto en estos ítems.
+
+---
+
+### 4.4. Tabs clickeables – Modelos
+
+Encabezado visual:
+
+- `Imagen auto Kia Soluto`
+- `Imagen SWM`
+
+Nombres de tabs:
+
+- `KIA SOLUTO`
+- `SWM G05`
+
+**Contenido Tab 1 (KIA SOLUTO):**
+
+- `Cuota semanal $160.000`
+- `Garantía $500.000`
+- `Características del auto`
+- `(Call to Action: Postular)`
+
+**Contenido Tab 2 (SWM G05):**
+
+- `Cuota semanal $205.000`
+- `Garantía $500.000`
+- `Incluye Decreto 80`
+- `Características del auto`
+- `(Call to Action: Postular)`
+
+El texto visible del botón puede ser `Postular`, pero la frase  
+`(Call to Action: Postular)` debe existir en el código (por ejemplo como comentario o texto auxiliar) sin cambios.
+
+---
+
+### 4.5. Sección 3 – Requisitos
+
+Título:
+
+- `¿Cuáles son los requisitos?`
+
+Lista exacta:
+
+- `Licencia de conducir vigente`
+- `Tener entre 28 y 65 años`
+- `Contar con depósito de garantía`
+- `Cuenta activa en Uber, Didi o Cabify desde hace más de 1 año`
+- `Demostrar ganancias promedio superiores a $ 400.000 en las 12 últimas semanas.`
+- `Domicilio en la Región Metropolitana`
+- `Evaluación crediticia interna.`
+
+---
+
+### 4.6. Sección 4 – Proceso
+
+Título:
+
+- `¿Cómo es el proceso?`
+
+Pasos (en este orden, texto íntegro):
+
+1. `Postula (tiempo aproximado 2 minutos y debes subir 2 documentos), y en menos de 30 minutos te contactaremos para notificar el resultado de tu postulación y decirte cómo avanzamos.`
+2. `Breve llamada para conocerte`
+3. `Firma de Contrato y entrega del auto`
+
+---
+
+### 4.7. Sección 5 – Manifiesto
+
+Bloque de texto:
+
+1. `Creemos en quienes mueven la ciudad.`
+2. `En Maneja Ya ofrecemos una alternativa justa frente al mercado informal, donde los arriendos son caros y no entregan nada a cambio.`
+3. `Somos transparentes: tu cuota se divide entre el pago del auto (capital, intereses e impuestos) y los costos operativos como seguro y mantenciones. Además, te enviamos el detalle de los pórticos de TAG para que ordenes tus gastos sin sorpresas.`
+4. `Damos oportunidades reales a conductores responsables: maneja hoy, sé dueño mañana.`
+
+No se puede modificar ningún carácter de estos textos.
+
+---
+
+## 5. Lineamientos de diseño
+
+### 5.1. Menú
+
+- Barra superior fija o sticky.
+- Izquierda: logo (imagen).
+- Derecha: `Portal Conductor` estilizado como botón ligero.
+- Puedes incluir otros links de navegación (Inicio, Qué incluye, Modelos, Requisitos, Proceso, Nosotros), pero el texto `Portal Conductor` debe aparecer claro a la derecha.
+
+**Mobile:**
+
+- Icono de menú hamburguesa.
+- Menú se despliega verticalmente.
+- Manejar `aria-expanded` y `aria-controls`.
+- Bloquear scroll del body cuando el menú esté abierto.
+
+---
+
+### 5.2. Hero (First fold)
+
+- Layout desktop: dos columnas.
+  - Izquierda: los tres textos del header.
+  - Derecha: espacio para imagen de auto (poner `<img>` con comentario `<!-- Reemplazar src por imagen del auto -->`).
+- Debajo del texto se pueden añadir uno o dos botones CTA (ej. “Postular ahora”, “Hablar por WhatsApp”), con `href="#"` y comentarios para reemplazo de links.
+
+---
+
+### 5.3. “¿Qué incluye?”
+
+- Mostrar los ítems como **cards** o bloques tipo icon+texto.
+- Grid:
+  - Desktop: 3 columnas.
+  - Tablet: 2 columnas.
+  - Mobile: 1 columna.
+- Cards blancas, bordes redondeados, sombra suave.
+
+---
+
+### 5.4. Tabs clickeables
+
+- Componente de tabs moderno:
+  - Cabecera con dos tabs: `KIA SOLUTO` y `SWM G05`.
+  - Solo un panel visible a la vez.
+- Requisitos accesibilidad:
+  - `role="tablist"` para contenedor.
+  - `role="tab"` en cada tab, `aria-selected="true/false"`.
+  - `role="tabpanel"` en cada panel y atributo `hidden` cuando no está activo.
+- Cada panel:
+  - Imagen del modelo (con texto/alt que refiera a “Imagen auto Kia Soluto” o “Imagen SWM”).
+  - Textos del contenido correspondientes.
+  - Botón de postulación con texto visible `Postular` o similar, pero conservando la frase original `(Call to Action: Postular)` en algún lugar del código.
+
+---
+
+### 5.5. Requisitos
+
+- Card central con título `¿Cuáles son los requisitos?`.
+- Lista con bullets para cada requisito.
+- Sombra suave y ancho máximo ~700–800px.
+
+---
+
+### 5.6. Proceso
+
+- Sección con título `¿Cómo es el proceso?`.
+- Mostrar los 3 pasos en **cards numeradas**:
+  - Desktop: 3 columnas.
+  - Mobile: 1 columna.
+- El texto completo de cada paso debe aparecer en su card (no resumir).
+
+---
+
+### 5.7. Manifiesto
+
+- Título grande: `Creemos en quienes mueven la ciudad.`.
+- Debajo, los tres párrafos siguientes.
+- Layout tipo “about”: bloque centrado, con fondo blanco y sombra o similar.
+
+---
+
+## 6. Comportamiento interactivo (script.js)
+
+Debes implementar en JavaScript:
+
+1. **Menú mobile:**
+   - Toggle de la clase que muestra/oculta el menú.
+   - Actualización de `aria-expanded`.
+   - Bloqueo de scroll del body al abrir.
+
+2. **Tabs de modelos:**
+   - Al hacer clic en un tab, activar su panel asociado.
+   - Actualizar clases `active`, `aria-selected` y el atributo `hidden`.
+
+No se requieren otras interacciones.
+
+---
+
+## 7. Responsive design
+
+Usar media queries:
+
+- Tablet: hasta `1024px`.
+- Mobile: hasta `768px` y `480px`.
+
+Reglas:
+
+- Menú hamburguesa en mobile.
+- Todas las grillas (Qué incluye, Proceso) pasan a 1 columna.
+- Hero se convierte en layout de una columna (imagen + texto apilados).
+- Botones ocupan casi todo el ancho en mobile.
+
+---
+
+## 8. Placeholders (links e imágenes)
+
+No usar URLs definitivas. Poner:
+
+- `href="#"` en:
+  - `Portal Conductor`.
+  - Botones de postulación.
+  - Cualquier CTA adicional.
+- Comentario HTML indicando qué se debe reemplazar, por ejemplo:
+  - `<!-- Reemplazar con link real al Portal Conductor -->`
+  - `<!-- Reemplazar con link real al formulario de postulación -->`
+- En imágenes, usar:
+  - `src="images/..."` con comentarios `<!-- Reemplazar src por imagen real -->`.
+
+---
+
+## 9. Checklist antes de entregar
+
+- [ ] Todos los textos listados en este README aparecen exactamente iguales (incluyendo puntos y tildes).
+- [ ] El menú y los tabs funcionan correctamente con JavaScript.
+- [ ] La página se ve bien en desktop, tablet y mobile.
+- [ ] No se usaron frameworks prohibidos (React, Vue, Bootstrap, Tailwind).
+- [ ] Los CTAs tienen `href="#"` y comentarios de reemplazo.
+- [ ] Se usó estructura semántica (`header`, `nav`, `main`, `section`, `footer`).
+
+---
+
+## 10. Implementación actual (nota interna)
+
+- Logo principal en menú: `images/logo_transparente_horizontal.png`
+- Imagen del first fold (hero): `images/portada_desktop.png`
+- Imagen modelo KIA SOLUTO (tab): `images/soluto.jpeg`
+- Imagen modelo SWM G05 (tab): `images/swm.jpg`
+- Tipografía principal: Google Fonts `Poppins` (con fallback a tipografías de sistema).

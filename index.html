@@ -2,198 +2,209 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <title>Maneja Ya - Portal Conductor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Maneja Ya - Conduce hacia tu propio auto. Arriendo de vehículos con opción de compra para conductores de Uber y aplicaciones similares.">
-  <meta name="keywords" content="arriendo de autos, compra de auto, Uber, Didi, Cabify, conductor, vehículo, arriendo con opción de compra">
-  <meta name="author" content="Maneja Ya">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Maneja Ya - Conduce hacia tu propio auto">
-  <meta property="og:description" content="Arriendo de vehículos con opción de compra para conductores de Uber y aplicaciones similares.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://manejaya.cl">
-  <meta property="og:image" content="images/ChatGPT Image 2 jun 2025, 06_31_57 p.m..png">
-  <meta name="facebook-domain-verification" content="8t0vtfn1w79zgelzzej3yzrpjq2ybl" />
-  <title>Maneja Ya - Conduce hacia tu propio auto</title>
-  <link rel="canonical" href="https://manejaya.cl">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Maneja Ya - Arriendo de vehículos con opción de compra para conductores de Uber y apps similares.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQ096QEVTB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-JQ096QEVTB');
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header role="banner">
-    <div class="header-content">
-      <img src="images/logo_transparente_horizontal.png" alt="Maneja Ya Logo" class="logo" width="200" height="55">
+  <!-- MENÚ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo-wrapper">
+        <!-- Reemplazar src por logo real si cambia -->
+        <img src="images/logo_transparente_horizontal.png" alt="Logo Maneja Ya" class="logo">
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-menu" class="main-nav" role="navigation" aria-label="Menú principal">
+        <a href="#" class="btn btn-primary nav-cta">
+          Postular ahora
+        </a>
+        <!-- Reemplazar href con link real al formulario de postulación -->
+        <a href="#" class="portal-link">
+          Portal Conductor
+        </a>
+        <!-- Reemplazar href con link real al Portal Conductor -->
+      </nav>
     </div>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
-      <span class="hamburger"></span>
-    </button>
-    <nav id="main-menu" role="navigation" aria-label="Menú principal" class="nav-menu">
-      <a href="#inicio" aria-label="Ir a inicio">Inicio</a>
-      <a href="#servicios" aria-label="Ir a servicios">Servicio</a>
-      <a href="#nosotros" aria-label="Ir a sobre nosotros">Sobre Nosotros</a>
-      <a href="#faq" aria-label="Ir a preguntas frecuentes">Preguntas Frecuentes</a>
-      <a href="#contacto" aria-label="Ir a contacto">Contacto</a>
-    </nav>
   </header>
 
   <main>
+    <!-- FIRST FOLD / HEADER -->
     <section id="inicio" class="hero-section" aria-label="Sección principal">
-      <div class="hero-content">
-        <div class="hero-text-container">
-          <h1 class="section-title">Conduce Hacia Tu Propio Auto</h1>
-          <div class="hero-text">
-            <p>¿Trabajas como conductor de Uber o apps similares, pero no puedes pagar un auto propio?
-              Con Maneja Ya puedes arrendar un vehículo con opción de compra, tras 3 años, convertirlo en tuyo. Con contrato ante notario, sin bancos, sin letra chica.  </p>
-          </div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h2>¿Trabajas como conductor de Uber?</h2>
+          <h1>Arrienda con Opción de Compra: En 3 años el Auto es Tuyo</h1>
+          <p>Déjanos tus datos y dentro de 30 minutos te contactaremos para decirte cómo avanzamos.</p>
+
           <div class="hero-cta">
-            <a class="cta-button" href="https://docs.google.com/forms/d/e/1FAIpQLScTH3MBO8aEvq44MebqSbVfKs58nJdQd3QqdgpmYRNCYyykcw/viewform?usp=header" aria-label="Postular ahora">Postula ahora</a>
-            <a class="cta-button whatsapp-button" href="https://wa.me/message/PCGSNGHXVTXIH1" target="_blank" rel="noopener noreferrer" aria-label="Háblanos por Whatsapp">
-              <i class="fab fa-whatsapp"></i> Háblanos por Whatsapp
-            </a>
+            <a href="#" class="btn btn-primary">Postular ahora</a>
+            <!-- Reemplazar href con link real al formulario de postulación -->
+            <a href="#" class="btn btn-secondary">Hablar por WhatsApp</a>
+            <!-- Reemplazar href con link real a WhatsApp -->
           </div>
         </div>
-        <div class="hero-image-container">
-          <img src="images/auto maneja ya.png" alt="Auto Maneja Ya" class="hero-image" width="500" height="300">
+
+        <div class="hero-image-wrapper">
+          <!-- Reemplazar src por imagen del auto -->
+          <img src="images/portada_desktop.png" alt="Imagen de auto para trabajar en aplicaciones" class="hero-image">
         </div>
       </div>
     </section>
 
-    <section id="servicios" aria-label="Cómo funciona">
-      <h2 class="section-title">¿Cómo Funciona?</h2>
-      
-      <div class="card" data-number="1">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>Postula</h3>
-          </div>
-          <p>Completa un breve formulario con tus datos personales, experiencia como conductor y otros antecedentes.</p>
-        </div>
-      </div>
-      
-      <div class="card" data-number="2">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>Evaluación</h3>
-          </div>
-          <p>Queremos conocerte bien. Revisaremos tu experiencia, conversaremos contigo y resolveremos todas tus dudas. Buscamos conductores comprometidos que quieran crecer y manejar su propio auto</p>
-        </div>
-      </div>
-      
-      <div class="card" data-number="3">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>Te entregamos el auto</h3>
-          </div>
-          <p>Firmamos el contrato de arriendo con opción de compra. Recibes un auto nuevo listo para trabajar, con GPS, TAG y seguro.</p>
-        </div>
-      </div>
+    <!-- SEGUNDA SECCIÓN: ¿QUÉ INCLUYE? -->
+    <section id="incluye" class="section includes-section" aria-label="Qué incluye">
+      <h2 class="section-title">¿Qué Incluye?</h2>
 
-      <div class="card" data-number="4">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>Activación y operación</h3>
-          </div>
-          <p>Activamos tu plan. Ahora puedes generar ingresos trabajando con él, mientras cumples con tu pago semanal. Cada semana cuenta para acercarte a tu meta
-          </p>
-        </div>
+      <div class="includes-grid">
+        <article class="include-card">
+          <h3>Permisos e inscripción</h3>
+        </article>
+        <article class="include-card">
+          <h3>Mantenciones básicas</h3>
+        </article>
+        <article class="include-card">
+          <h3>Seguro para transporte de pasajeros</h3>
+        </article>
+        <article class="include-card">
+          <h3>GPS con inmovilizador</h3>
+        </article>
+        <!-- Texto original: Láminas de seguridad y sistemas de seguridad para prevención de robos. (se mantiene en el código según README) -->
+        <article class="include-card include-card-original-text">
+          <h3>Láminas de seguridad y sistemas de seguridad para prevención de robos.</h3>
+        </article>
+        <article class="include-card">
+          <h3>Láminas de Seguridad</h3>
+        </article>
+        <article class="include-card">
+          <h3>Sistema de Seguridad Antirobos</h3>
+        </article>
       </div>
+    </section>
 
-      <div class="card" data-number="5">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>Recompensa</h3>
+    <!-- TABS CLICKEABLES: MODELOS -->
+    <section id="modelos" class="section modelos-section" aria-label="Modelos disponibles">
+      <h2 class="section-title">Modelos Disponibles</h2>
+
+      <div class="tabs-wrapper">
+        <!-- Tabs -->
+        <div class="tabs-header" role="tablist" aria-label="Modelos de autos">
+          <button class="tab-button active" role="tab" aria-selected="true" aria-controls="tab-kia" id="tab-kia-btn" data-target="tab-kia">
+            KIA SOLUTO
+          </button>
+          <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-swm" id="tab-swm-btn" data-target="tab-swm">
+            SWM G05
+          </button>
+        </div>
+
+        <!-- Panel KIA SOLUTO -->
+        <div class="tab-panel active" id="tab-kia" role="tabpanel" aria-labelledby="tab-kia-btn">
+          <div class="tab-panel-inner">
+            <div class="tab-image-wrapper">
+              <!-- Reemplazar src por imagen real -->
+              <img src="images/soluto.png" alt="Imagen auto Kia Soluto" class="tab-image">
+              <!-- Texto original: Imagen auto Kia Soluto -->
+            </div>
+            <div class="tab-content">
+              <h3 class="tab-model-title">KIA SOLUTO</h3>
+              <ul class="tab-list">
+                <li>Cuota semanal $160.000</li>
+                <li>Garantía $500.000</li>
+                <li>Características del auto</li>
+              </ul>
+              <!-- (Call to Action: Postular) -->
+              <a href="#" class="btn btn-primary">Postular</a>
+              <!-- Reemplazar href con link real de postulación para este modelo -->
+            </div>
           </div>
-          <p>Después de 3 años cumpliendo con tus pagos semanales, el auto pasa a tu nombre. ¡Sin sorpresas!</p>
+        </div>
+
+        <!-- Panel SWM G05 -->
+        <div class="tab-panel" id="tab-swm" role="tabpanel" aria-labelledby="tab-swm-btn" hidden>
+          <div class="tab-panel-inner">
+            <div class="tab-image-wrapper">
+              <!-- Reemplazar src por imagen real -->
+              <img src="images/swm.jpg" alt="Imagen SWM" class="tab-image">
+              <!-- Texto original: Imagen SWM -->
+            </div>
+            <div class="tab-content">
+              <h3 class="tab-model-title">SWM G05</h3>
+              <ul class="tab-list">
+                <li>Cuota semanal $205.000</li>
+                <li>Garantía $500.000</li>
+                <li>Incluye Decreto 80</li>
+                <li>Características del auto</li>
+              </ul>
+              <!-- (Call to Action: Postular) -->
+              <a href="#" class="btn btn-primary">Postular</a>
+              <!-- Reemplazar href con link real de postulación para este modelo -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="nosotros" aria-label="Sobre nosotros">
-      <h2 class="section-title">Sobre Nosotros</h2>
-      <div class="about-card">
-        <p>Creemos en quienes hacen mover la ciudad.
-          En Maneja Ya, nacimos con una misión clara: ofrecer una alternativa real, justa y accesible a los conductores que, con esfuerzo diario, buscan salir adelante pero han tenido dificultades para acceder a las opciones tradicionales de financiamiento.
-          
-          Sabemos que hay personas responsables, trabajadoras y comprometidas que no califican para un crédito, no por falta de mérito, sino por falta de oportunidades. Por eso, en Maneja Ya decidimos hacer las cosas distinto.
-          
-          No solo entregamos autos, entregamos confianza.
-          Seleccionamos cuidadosamente a cada conductor, buscando a quienes realmente quieran crecer, progresar e independizarse. A cambio, ofrecemos una oportunidad concreta: arrendar un vehículo para trabajar y, tras cumplir con responsabilidad, convertirse en su dueño.
-          
-          Maneja hoy. Sé dueño mañana.</p>
+    <!-- SECCIÓN 3: REQUISITOS -->
+    <section id="requisitos" class="section requisitos-section" aria-label="Requisitos">
+      <h2 class="section-title">¿Cuáles son los Requisitos?</h2>
+
+      <div class="requisitos-card">
+        <ul>
+          <li>Licencia de conducir vigente</li>
+          <li>Tener entre 28 y 65 años</li>
+          <li>Contar con depósito de garantía</li>
+          <li>Cuenta activa en Uber, Didi o Cabify desde hace más de 1 año</li>
+          <li>Demostrar ganancias promedio superiores a $ 400.000 en las 12 últimas semanas.</li>
+          <li>Domicilio en la Región Metropolitana</li>
+          <li>Evaluación crediticia interna.</li>
+        </ul>
       </div>
     </section>
 
-    <section id="faq" aria-label="Preguntas frecuentes">
-      <h2 class="section-title">Preguntas Frecuentes</h2>
+    <!-- SECCIÓN 4: PROCESO -->
+    <section id="proceso" class="section proceso-section" aria-label="Cómo es el proceso">
+      <h2 class="section-title">¿Cómo es el Proceso?</h2>
 
-      <div class="faq-item">
-        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-          <h3>¿Qué necesito para postular?</h3>
-        </div>
-        <div class="faq-answer" role="region">
-          <p>Debes tener licencia de conducir profesional o clase B al día, antecedentes limpios, y muchas ganas de trabajar de forma responsable. También valoramos experiencia previa en aplicaciones de transporte.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-          <h3>¿Puedo trabajar con cualquier aplicación?</h3>
-        </div>
-        <div class="faq-answer" role="region">
-          <p>Sí. Puedes usar el vehículo en plataformas como Uber, DiDi, Cabify, o incluso para delivery si lo deseas.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-          <h3>¿Cuánto debo pagar semanalmente?</h3>
-        </div>
-        <div class="faq-answer" role="region">
-          <p>El valor exacto se define en la etapa de evaluación, pero es una cuota fija que incluye el uso del auto y servicios básicos como mantenciones, seguros y patente.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-          <h3>¿El auto pasa a mi nombre automáticamente después de 3 años?</h3>
-        </div>
-        <div class="faq-answer" role="region">
-          <p>Sí, si cumples con los pagos y condiciones del contrato, el auto pasa a tu nombre.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-          <h3>¿Se puede subarrendar el vehículo?</h3>
-        </div>
-        <div class="faq-answer" role="region">
-          <p>No, está estrictamente prohibido. La única persona autorizada para conducir el vehículo es el arrendatario.</p>
-        </div>
+      <div class="proceso-grid">
+        <article class="proceso-step">
+          <span class="step-number">1</span>
+          <p class="proceso-text">Déjanos tus datos: Te tomará 2 minutos y debes subir 2 documentos</p>
+        </article>
+        <article class="proceso-step">
+          <span class="step-number">2</span>
+          <p class="proceso-text">Breve llamada para conocerte</p>
+        </article>
+        <article class="proceso-step">
+          <span class="step-number">3</span>
+          <p class="proceso-text">Firma de Contrato y entrega del auto</p>
+        </article>
       </div>
     </section>
 
-    <section id="contacto" aria-label="Información de contacto">
-      <h2 class="section-title">¿Tienes Preguntas?</h2>
-      <p>Escríbenos o postula directamente:</p>
-      <a class="cta-button" id="formulario" href="https://docs.google.com/forms/d/e/1FAIpQLScTH3MBO8aEvq44MebqSbVfKs58nJdQd3QqdgpmYRNCYyykcw/viewform?usp=header" target="_blank" rel="noopener noreferrer" aria-label="Ir al formulario de postulación">Postula ahora</a>
-      <p style="margin-top: 1rem;">O escríbenos a: <a href="mailto:contacto@manejaya.cl" aria-label="Enviar correo a contacto@manejaya.cl">contacto@manejaya.cl</a></p>
+    <!-- SECCIÓN 5: MANIFIESTO -->
+    <section id="manifiesto" class="section manifiesto-section" aria-label="Sobre Maneja Ya">
+      <h2 class="section-title">Creemos en quienes mueven la ciudad.</h2>
+
+      <div class="manifiesto-card">
+        <p>En Maneja Ya ofrecemos una alternativa justa frente al mercado informal, donde los arriendos son caros y no entregan nada a cambio.</p>
+        <p>Somos transparentes: tu cuota se divide entre el pago del auto (capital, intereses e impuestos) y los costos operativos como seguro y mantenciones. Además, te enviamos el detalle de los pórticos de TAG para que ordenes tus gastos sin sorpresas.</p>
+        <p>Damos oportunidades reales a conductores responsables: maneja hoy, sé dueño mañana.</p>
+      </div>
     </section>
   </main>
-  <footer role="contentinfo">
+
+  <footer class="site-footer" role="contentinfo">
     <p>&copy; 2025 Maneja Ya. Todos los derechos reservados.</p>
-    <p class="address">Estoril 200, Las Condes</p>
-    <p class="phone-number">&copy; +56987052160</p>
+    <p>Estoril 200, Las Condes</p>
+    <p>&copy; +56987052160</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
