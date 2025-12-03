@@ -414,7 +414,7 @@
     position: relative;
     padding-left: 1.2rem;
     margin-bottom: 0.4rem;
-    font-size: 0.98rem;
+    font-size: 1.3rem;
   }
 
   .tab-list li::before {
@@ -446,6 +446,7 @@
   .requisitos-card ul {
     margin: 0;
     padding-left: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .requisitos-card li {
