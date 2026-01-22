@@ -161,7 +161,7 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
     padding: 0.7rem 1.5rem;
   }
-
+  
   .nav-cta {
     font-size: 0.9rem;
     padding: 0.7rem 1.8rem;
@@ -314,7 +314,7 @@
     border: 1px solid rgba(0, 30, 77, 0.06);
     text-align: left;
   }
-
+  
   .include-card-original-text {
     display: none;
   }
@@ -397,27 +397,27 @@
     flex: 1;
     min-width: 260px;
   }
-
+  
   .tab-model-title {
     margin: 0 0 0.75rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-azul-oscuro);
   }
-
+  
   .tab-list {
     list-style: none;
     margin: 0 0 1.2rem;
     padding: 0;
   }
-
+  
   .tab-list li {
     position: relative;
     padding-left: 1.2rem;
     margin-bottom: 0.4rem;
     font-size: 1.3rem;
   }
-
+  
   .tab-list li::before {
     content: "";
     position: absolute;
@@ -495,8 +495,6 @@
     text-align: center;
   }
   
-
-  
   .step-number {
     position: absolute;
     top: -20px;
@@ -556,15 +554,15 @@
     color: #ffffff;
     font-size: 0.9rem;
   }
-
+  
   .site-footer p {
     margin: 0.5rem 0;
   }
-
+  
   .site-footer p:first-child {
     margin-top: 0;
   }
-
+  
   .site-footer p:last-child {
     margin-bottom: 0;
   }
@@ -639,11 +637,11 @@
       gap: 2rem;
       flex-direction: column;
     }
-
+  
     .hero-image-wrapper {
       order: -1;
     }
-
+  
     .hero-text {
       order: 1;
     }
@@ -683,6 +681,16 @@
     .btn {
       width: 100%;
     }
+  
+    /* ✅ MOBILE: mostrar SIEMPRE todas las cards (vertical) */
+    .tabs-wrapper .tab-panel {
+      display: block;
+    }
+  
+    /* Mejor separación entre cards */
+    .tabs-wrapper .tab-panel + .tab-panel {
+      margin-top: 1.2rem;
+    }
   }
   
   @media (max-width: 480px) {
@@ -705,7 +713,7 @@
     .include-card {
       padding: 1.6rem 1.3rem;
     }
-
+  
     .proceso-step {
       padding: 2rem 1.2rem 1.4rem;
     }

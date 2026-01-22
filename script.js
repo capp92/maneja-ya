@@ -34,6 +34,11 @@
         menuToggle.setAttribute("aria-expanded", "false");
         body.style.overflow = "auto";
       }
+  
+      // Si pasa a mobile, mostrar todos los paneles (vertical)
+      if (window.innerWidth <= 768) {
+        enableMobilePanels();
+      }
     });
   
     /* ===========================
@@ -43,21 +48,47 @@
     const tabButtons = document.querySelectorAll(".tab-button");
     const tabPanels = document.querySelectorAll(".tab-panel");
   
+    const isMobile = () => window.innerWidth <= 768;
+  
+    const setActiveButton = (activeBtn) => {
+      tabButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-selected", "false");
+      });
+      activeBtn.classList.add("active");
+      activeBtn.setAttribute("aria-selected", "true");
+    };
+  
+    const enableMobilePanels = () => {
+      // En mobile: se ven TODAS las cards verticalmente (no se ocultan)
+      tabPanels.forEach((panel) => {
+        panel.classList.add("active");
+        panel.removeAttribute("hidden");
+      });
+    };
+  
+    // Inicialización mobile
+    if (isMobile()) {
+      enableMobilePanels();
+    }
+  
     tabButtons.forEach((button) => {
       button.addEventListener("click", () => {
         const targetId = button.getAttribute("data-target");
+        const targetPanel = document.getElementById(targetId);
   
-        // Desactivar todos los tabs
-        tabButtons.forEach((btn) => {
-          btn.classList.remove("active");
-          btn.setAttribute("aria-selected", "false");
-        });
+        // En mobile: solo anclar/scroll; NO ocultar panels
+        if (isMobile()) {
+          setActiveButton(button);
+          if (targetPanel) {
+            targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+          return;
+        }
   
-        // Activar tab clickeado
-        button.classList.add("active");
-        button.setAttribute("aria-selected", "true");
+        // Desktop: comportamiento normal de tabs (mostrar uno, ocultar otros)
+        setActiveButton(button);
   
-        // Mostrar panel correspondiente
         tabPanels.forEach((panel) => {
           if (panel.id === targetId) {
             panel.classList.add("active");
